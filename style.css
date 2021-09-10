@@ -166,12 +166,12 @@ nav a:hover{
 /* Scroll */
 
 nav.scroll {
-    width: 700px;
+    width: 750px;
+    margin-top: 0;
 }
 
 .rectNav.scroll{
     background-color: #494a4eef;
-    line-height: 30px;
     height: 50px; 
 }
 
@@ -199,15 +199,12 @@ nav.scroll {
 
 .rectNav a.scroll{
     color: #f0f0ee;
+    font-size: 20px;
 }
 
 .rectNav a.scroll:hover{
     color: #da3b37;
 }
-
-
-
-
 
 /* Header */
 
