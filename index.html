@@ -17,7 +17,6 @@
 
 <body>
 
-
     <div id="left">
         <p id="num">05 62 95 00 00</p>
         <img id="logo" src="img/banniere-removebg-preview.png" alt="logo">
@@ -30,10 +29,10 @@
             <a class="hoverNav" href="#gins">Gins</a>
             <a class="hoverNav" href="#ztxtAvis">Avis</a>
             <a class="hoverNav" href="#res">Réservation</a>
-            <a href="#"><button class="btn-grad">CONNEXION</button></a>
+            <a href="#"><button id="con" class="btn-grad">Connexion</button></a>
         </div>
         <p id="inscription"><span class="white">Pas encore de compte?</span> &ensp;<a href="inscription.html"><button
-                    id="insc" class="btn-grad">INSCRIPTION</button></a> </p>
+                    id="insc" class="btn-grad">Inscription</button></a> </p>
     </nav>
 
     <header>
@@ -368,13 +367,13 @@
 
                             <div>
                                 <label for="telephone">Téléphone: </label><br>
-                                <input type="tel" id="telephone" name="telephone" minlength="10" maxlength="10" />
+                                <input type="tel number" id="telephone" name="telephone" minlength="10" maxlength="10" />
                             </div>
 
                         </div>
                     </div>
 
-                    <input id="reserver" class="btn-grad" type="submit" value="RESERVER" />
+                    <input id="reserver" class="btn-grad" type="submit" value="Réserver" />
 
                 </form>
             </div>

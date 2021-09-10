@@ -74,10 +74,10 @@ h3 {
     transform-origin: 0 0; 
     transform: scaleX(0);
     position: absolute;
-    top: 55px;
+    top: 28px;
     left: 0;
     right: 0;
-    height: 5px; 
+    height: 3px; 
     background: #27282a;
     transition: transform .4s;
 }
@@ -96,6 +96,7 @@ nav {
     z-index: 100;
     right: 0;
     width: 960px;
+    transition: all 0.8s ease-in-out;
 }
 
 nav a{
@@ -103,7 +104,6 @@ nav a{
     text-decoration: none;
     font-size: 25px;
     font-weight: bold;
-    line-height: 80px;
     margin-right: 20px;
 }
 
@@ -114,8 +114,11 @@ nav a:hover{
 .rectNav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #da3a37e5;
     z-index: -1;
+    transition: all 0.8s ease-in-out;
+    height: 80px;
 }
 
 .rectNav::before{
@@ -125,37 +128,85 @@ nav a:hover{
     border-top : 80px solid #da3a37e5;
     display : inline-block;
     right: 100%;
+    transition: all 0.8s ease-in-out;
 }
 
 .btn-grad {
-   background-image: linear-gradient(to right, #27282a 0%, #414345  51%, #232526  100%);
-   padding: 15px 25px;
-   font-size: 25px;
-   text-align: center;
-   transition: 0.5s;
-   background-size: 200% auto;
-   color: #f0f0ee;            
-   border-radius: 10px;
-   
-}
+    background-image: linear-gradient(to right, #27282a 0%, #414345  51%, #232526  100%);
+    padding: 15px 25px;
+    font-size: 25px;
+    text-align: center;
+    background-size: 200% auto;
+    color: #f0f0ee;            
+    border-radius: 10px; 
+    transition: all 0.8s ease-in-out; 
+ }
 
 .btn-grad:hover {
-   background-position: right center;
-   color: #f0f0ee;
-   text-decoration: none;
+    background-position: right center;
+    color: #f0f0ee;
+    text-decoration: none;
+    transition: all 0.8s ease-in-out; 
+ }
+ 
+ #inscription{
+     float: right;
+     font-size: 20px;
+     margin-top: 5px;
+     transition: all 0.8s ease-in-out; 
+ }
+ 
+ 
+ #insc {
+     background-image: linear-gradient(to right, #da3b37 0%, #27282a  51%, #da3b37  100%);
+     padding: 5px 10px;
+     font-size: 20px;
+ }
+
+/* Scroll */
+
+nav.scroll {
+    width: 700px;
 }
 
-#inscription{
-    float: right;
+.rectNav.scroll{
+    background-color: #494a4eef;
+    line-height: 30px;
+    height: 50px; 
+}
+
+.rectNav.scroll::before{
+    content:"";
+    position: absolute;
+    border-left : 50px solid transparent;
+    border-top : 50px solid #494a4eef;
+    display : inline-block;
+    right: 100%;
+}
+
+.btn-grad.scroll{
     font-size: 20px;
+    padding: 5px 12px;
+}
+
+#inscription.scroll {
+    font-size: 18px;   
+}
+
+#insc.scroll {
+    font-size: 18px;   
+}
+
+.rectNav a.scroll{
+    color: #f0f0ee;
+}
+
+.rectNav a.scroll:hover{
+    color: #da3b37;
 }
 
 
-#insc {
-    background-image: linear-gradient(to right, #da3b37 0%, #27282a  51%, #da3b37  100%);
-    padding: 5px;
-    font-size: 18PX;
-}
+
 
 
 /* Header */
@@ -208,6 +259,7 @@ nav a:hover{
     height: 700px;
     border: 2px solid black; 
 }
+ 
 
 /* Séparations */
 
@@ -499,6 +551,10 @@ footer a {
 .fab{
     font-size: 45px;
     padding: 10px;
+}
+
+.fab:hover{
+    transform: scale(1.5);
 }
 
 footer span{
