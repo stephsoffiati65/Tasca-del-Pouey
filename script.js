@@ -4,11 +4,7 @@
 
 
 const rectNav = document.querySelector('.rectNav');
-<<<<<<< Updated upstream
 nav = document.querySelector('nav');
-=======
-const nav = document.querySelector('nav');
->>>>>>> Stashed changes
 const a = document.querySelectorAll('nav a');
 const button = document.querySelector('.btn-grad ');
 const inscription = document.querySelector('#inscription');
