@@ -1,12 +1,20 @@
+
+// Menu dynamique
+
+
+
 const rectNav = document.querySelector('.rectNav');
+<<<<<<< Updated upstream
 nav = document.querySelector('nav');
+=======
+const nav = document.querySelector('nav');
+>>>>>>> Stashed changes
 const a = document.querySelectorAll('nav a');
 const button = document.querySelector('.btn-grad ');
 const inscription = document.querySelector('#inscription');
 const insc = document.querySelector('#insc');
 const header = document.querySelector('header');
 let height = header.clientHeight;
-
 
 
 window.addEventListener('scroll', () => {
@@ -29,3 +37,40 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Slider
+
+const items = document.querySelectorAll('.avis'); // le prblème vient d'ici, dans la console <div class="avis active .active"> et le active reste toujours
+const nbSlide = items.length;
+const suivant = document.querySelector('.right');
+const precedent = document.querySelector('.left');
+let count = 0;
+
+function slideSuivante () {
+    items[count].classList.remove('active');
+
+    if(count < nbSlide - 1){
+        count++;
+    } else {
+        count = 0
+    }
+
+    items[count].classList.add('active');
+    console.log(count);
+}
+
+suivant.addEventListener('click', slideSuivante);
+
+
+function slidePrecedente () {
+    items[count].classList.remove('active');
+
+    if(count > 0){
+        count--;
+    } else {
+        count = nbSlide - 1
+    }
+
+    items[count].classList.add('active');
+}
+
+precedent.addEventListener('click', slidePrecedente);
