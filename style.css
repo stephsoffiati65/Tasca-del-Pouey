@@ -458,9 +458,19 @@ left:0;
 
 .btn-nav {
     font-size: 60px;
+    opacity:0.2;
+    color: #27282a;
     margin: 20px;
     cursor: pointer;
 }
+
+.btn-nav:hover{
+    transition: all 0.5s ease-in-out; 
+    transform: scale(1.2);
+    opacity: 1;
+    color: #da3b37;
+}
+
 
 
 /* Réservations */
