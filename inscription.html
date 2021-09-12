@@ -1,59 +1,121 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="baseMedias.css">
-    <link 
-        rel="stylesheet" 
-        href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <script src="script.js" async></script>
 
     <title>La Tasca del Pouey</title>
 </head>
+
 <body>
-    <form>
-        <div>
-            <label for="nom">Nom</label>
-            <input type="text" id="nom" name="nom" required />
+
+    <div id="left">
+        <p id="num">05 62 95 00 00</p>
+        <img id="logo" src="img/banniere-removebg-preview.png" alt="logo">
+    </div>
+    <nav>
+        <div class="rectNav">
+            <a class="hoverNav" href="/index.html#ztxt">A propos</a>
+            <a class="hoverNav" href="/index.html#paella">Plats</a>
+            <a class="hoverNav" href="/index.html#tapas">Tapas</a>
+            <a class="hoverNav" href="/index.html#gins">Gins</a>
+            <a class="hoverNav" href="/index.html#ztxtAvis">Avis</a>
+            <a class="hoverNav" href="/index.html#res">Réservation</a>
+            <a href="connexion.html"><button id="con" class="btn-grad">Connexion</button></a>
         </div>
+        <div id="none">
+        <p id="inscription"><span class="white">Pas encore de compte?</span> &ensp;<a href="inscription.html"><span
+                    id="insc" class="clignote white">Inscription</span></a> </p></div>
+    </nav>
 
-        <div>
-            <label for="prenom">Prénom</label>
-            <input type="text" id="prenom" name="prenom" required />
+    <header>
+        <img id="taureau" src="img/taureau.png" alt="taureau">
+    </header>
+
+    <!-- Formulaire Inscription -->
+
+    <div id="inscrWhite" class="containWhite">
+        <img class="logo" src="img/banniere.png" alt="logo">
+        <h2 class="italic">Formulaire<span class="underRed"> d'inscription</span></h2>
+
+        
+            <div id="inscrBlack" class="formulaire">
+
+                <form class="form1">
+                    <div class="formul">
+                    <div>
+                        <div>
+                            <label for="nom">Nom:</label><br>
+                            <input type="text" id="nom" name="nom" required />
+                        </div>
+
+                        <div>
+                            <label for="prenom">Prénom:</label><br>
+                            <input type="text" id="prenom" name="prenom" required />
+                        </div>
+
+                        <div>
+                            <label for="date">Date de naissance: </label><br>
+                            <input type="date" id="date" name="date" />
+                        </div>
+
+                        <div>
+                            <label for="telephone">Numéro de téléphone:</label><br>
+                            <input type="number" id="telephone" name="telephone" />
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <label for="mail">Adresse mail:</label><br>
+                            <input type="email" id="mail" name="mail" />
+                        </div>
+
+
+                        <div>
+                            <label for="pseudo">Pseudo:</label><br>
+                            <input type="text" id="pseudo" name="pseudo" required />
+                        </div>
+
+                        <div>
+                            <label for="password">Mot de passe:</label><br>
+                            <input type="password" id="password" name="password" required />
+                        </div>
+
+                        <div>
+                            <label for="confirmPassword">Confirmation du Mot de passe:</label><br>
+                            <input type="password" id="confirmPassword" name="confirmPassword" required />
+                        </div>
+
+                        <input class="btn-grad valider" type="submit" value="Inscription" />
+                    </div>
+                </div>
+            </form>
         </div>
-
-        <div>
-            <label for="telephone">Numéro de téléphone</label>
-            <input type="number" id="telephone" name="telephone" />
-        </div>
-
-        <div>
-            <label for="mail">Adresse mail</label>
-            <input type="email" id="mail" name="mail" />
-        </div>
+    </div>
 
 
-        <div>
-            <label for="pseudo">Pseudo</label>
-            <input type="text" id="pseudo" name="pseudo" required />
-        </div>
+    <footer>
+        <p>© 2021 Copyright La Tasca del Pouey | <a class="mentionsLeg" href="/mentionsLegales.html"
+                target="_blank">Mentions légales</a> | Conception et
+            réalisation : <span>Soffiati Stéphane</span> </p>
+        <p>
+            <a href="https://www.facebook.com/pages/La%20Tasca%20Del%20Pouey/128652364413084/" target="_blank"><i
+                    class="fab fa-facebook-f white"></i></a>
+            <a href=""><i class="fab fa-instagram white" target="_blank"></i></a>
+            <a href="https://www.messenger.com/t/100020018410706" target="_blank"><i
+                    class="fab fa-facebook-messenger white"></i></a>
+        </p>
+    </footer>
 
-        <div>
-            <label for="password">Mot de passe</label>
-            <input type="password" id="password" name="password" required />
-        </div>
-
-        <div>
-            <label for="confirmPassword">Confirmation du Mot de passe</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" required />
-        </div>
-
-        <input id="inscription" type="submit" value="INSCRIPTION" />
-
-    </form>
 </body>
+
 </html>

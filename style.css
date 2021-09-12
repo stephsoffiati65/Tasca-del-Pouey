@@ -54,6 +54,10 @@ h3 {
     font-style: italic;
 }
 
+.bold{
+    font-weight: bold;
+}
+
 .red {
     color: #da3b37;
     text-shadow: 3px 3px 3px black;
@@ -151,7 +155,6 @@ nav a:hover{
 
 .btn-grad:hover {
     background-position: right center;
-    color: #da3a37;
     text-decoration: none;
     transition: all 0.8s ease-in-out;
     border-color: #f0f0ee;
@@ -184,7 +187,7 @@ nav a:hover{
     border-color: #f0f0ee;
   }
   @keyframes clignote {  
-    50% { opacity: 0.4; }
+    50% { opacity: 0.2; }
   }
 
 /* Scroll */
@@ -505,7 +508,7 @@ left:0;
 }
 
 .ztxt2{
-    height: 1350px;
+    height: 1400px;
     border-bottom: none;
     margin-top: 0;
 }
@@ -538,18 +541,16 @@ left:0;
 
 /* Formulaire */
 
-#formulaire{
+.formulaire{
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-color:#27282a;
     width: 95%;
-    height: 500px;
+    height: 550px;
     margin: auto;
     border: 2px solid black; 
 }
 
-form{
+.form1{
     text-align: left;
     color: #f0f0ee;
     font-size: 30px;
@@ -574,21 +575,17 @@ input:focus{
     width: 50px;
 }
 
-#reserver{
+.valider {
     float: right;
     margin-top: 30px;
-    width: 30%;
+    width: 40%;
 }
 
-#reserver:hover{
-    border-color: #f0f0ee;
-}
-
-#formul{
+.formul{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 50px; */
 }
 
 /* Footer */
@@ -624,35 +621,42 @@ footer span{
     color: white;
 }
 
-#mentionsLeg:hover{
+.mentionsLeg:hover{
     color: #f0f0ee;
 }
 
 /* Mentions Légales */
 
-#mentions{
+.containWhite{
     width: 60%;
     background-color:#f0f0ee;
     margin: auto;
-    margin-top: 50px;
     text-align: center;
     border: 2px solid black;
-
 }
 
-#legales {
+.containBlack {
     background-color:#27282a;
     width: 95%;
-    height: 2100px;
+    height: 2000px;
     border: 2px solid black; 
     margin: 50px auto; 
 }
 
-#legales p {
+.containBlack p {
     text-align: left;
 }
 
+/* Inscription */
 
+#inscrBlack{
+    height: 650px; 
+    margin: 50px auto;
+}
+
+#none{
+    display: none;
+}
 
 
 

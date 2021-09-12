@@ -1,8 +1,6 @@
 
 // Menu dynamique
 
-
-
 const rectNav = document.querySelector('.rectNav');
 nav = document.querySelector('nav');
 const a = document.querySelectorAll('nav a');
@@ -35,7 +33,7 @@ window.addEventListener('scroll', () => {
 
 // Slider
 
-const items = document.querySelectorAll('.avis'); // le prblème vient d'ici, dans la console <div class="avis active .active"> et le active reste toujours
+const items = document.querySelectorAll('.avis');
 const nbSlide = items.length;
 const suivant = document.querySelector('.right');
 const precedent = document.querySelector('.left');
