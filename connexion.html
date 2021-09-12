@@ -29,7 +29,7 @@
             <a class="hoverNav" href="/index.html#gins">Gins</a>
             <a class="hoverNav" href="/index.html#ztxtAvis">Avis</a>
             <a class="hoverNav" href="/index.html#res">Réservation</a>
-            <a href="#"><button id="con" class="btn-grad">Connexion</button></a>
+            <a class="none" href="#"><button class="btn-grad">Connexion</button></a>
         </div>
         <p id="inscription"><span class="white">Pas encore de compte?</span> &ensp;<a href="inscription.html"><span
                     id="insc" class="clignote white">Inscription</span></a> </p>
@@ -41,35 +41,30 @@
 
     <!-- Formulaire Inscription -->
 
-    <div id="inscrWhite" class="containWhite">
+    <div id="conWhite" class="containWhite">
         <img class="logo" src="img/banniere.png" alt="logo">
-        <h2 class="italic">Formulaire<span class="underRed"> d'inscription</span></h2>
+        <h2 class="italic">Espace<span class="underRed"> de connexion</span></h2>
+
+
+        <div id="conBlack" class="formulaire">
+
+            <form class="form1">
+                    <div>
+                        <label for="pseudo">Pseudo:</label><br>
+                        <input type="text" id="pseudo" name="pseudo" required />
+                    </div>
+
+                    <div>
+                        <label for="password">Mot de passe:</label><br>
+                        <input type="password" id="password" name="password" required />
+                    </div>
+
+                    <a href="#"><input class="btn-grad valider" type="submit" value="Connexion" /></a>
 
         
-            <div id="inscrBlack" class="formulaire">
-
-                <form class="form1">
-                    <div class="formul">
-                    <div>
-                        <div>
-
-                        <div>
-                            <label for="pseudo">Pseudo:</label><br>
-                            <input type="text" id="pseudo" name="pseudo" required />
-                        </div>
-
-                        <div>
-                            <label for="password">Mot de passe:</label><br>
-                            <input type="password" id="password" name="password" required />
-                        </div>
-
-                        <input class="btn-grad valider" type="submit" value="Inscription" />
-                    </div>
-                </div>
-            </form>
-        </div>
+        </form>
     </div>
-
+    </div>
 
     <footer>
         <p>© 2021 Copyright La Tasca del Pouey | <a class="mentionsLeg" href="/mentionsLegales.html"

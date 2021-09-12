@@ -600,6 +600,7 @@ footer{
     margin: auto;
     border: 2px solid black;
     border-bottom: none;
+    
     font-size: 15px;
 }
 
@@ -633,6 +634,7 @@ footer span{
     margin: auto;
     text-align: center;
     border: 2px solid black;
+    border-bottom: none;
 }
 
 .containBlack {
@@ -654,9 +656,49 @@ footer span{
     margin: 50px auto;
 }
 
-#none{
+#inscrWhite{
+    height: 1050px; 
+}
+
+.none{
     display: none;
 }
+
+/* Connexion */
+
+#conBlack {
+    height: 500px;
+    margin: 50px auto;
+}
+
+#conWhite {
+    height: 900px;
+}
+
+#con{
+    float: right;
+}
+
+/* Espace Connecté */
+
+#compte{
+    float: right;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#decon{
+    font-size: 20px;
+    padding: 5px;
+}
+
+#decon:hover{
+    border-color: #f0f0ee;
+}
+
+
+
+
 
 
 

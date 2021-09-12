@@ -31,9 +31,12 @@
             <a class="hoverNav" href="/index.html#res">Réservation</a>
             <a href="connexion.html"><button id="con" class="btn-grad">Connexion</button></a>
         </div>
-        <div id="none">
-        <p id="inscription"><span class="white">Pas encore de compte?</span> &ensp;<a href="inscription.html"><span
-                    id="insc" class="clignote white">Inscription</span></a> </p></div>
+
+        <span class="none">
+            <p id="inscription"><span class="white">Pas encore de compte?</span> &ensp;<a href="inscription.html"><span
+                        id="insc" class="clignote white">Inscription</span></a> </p>
+        </span>
+        
     </nav>
 
     <header>
@@ -46,11 +49,11 @@
         <img class="logo" src="img/banniere.png" alt="logo">
         <h2 class="italic">Formulaire<span class="underRed"> d'inscription</span></h2>
 
-        
-            <div id="inscrBlack" class="formulaire">
 
-                <form class="form1">
-                    <div class="formul">
+        <div id="inscrBlack" class="formulaire">
+
+            <form class="form1">
+                <div class="formul">
                     <div>
                         <div>
                             <label for="nom">Nom:</label><br>
@@ -95,7 +98,8 @@
                             <input type="password" id="confirmPassword" name="confirmPassword" required />
                         </div>
 
-                        <input class="btn-grad valider" type="submit" value="Inscription" />
+                        <a href="connexion.html"><input class="btn-grad valider" type="submit"
+                                value="Inscription" /></a>
                     </div>
                 </div>
             </form>
