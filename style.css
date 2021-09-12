@@ -43,6 +43,7 @@ h3 {
 
 .underRed {
     text-decoration: underline #da3b37;
+    color: #da3b37;
 }
 
 .underWhite {
@@ -55,11 +56,17 @@ h3 {
 
 .red {
     color: #da3b37;
+    text-shadow: 3px 3px 3px black;
 }
 
 .white {
     color: #f0f0ee;
     text-shadow: 3px 3px 3px black;
+}
+
+.black{
+    color: black;
+    text-shadow: 1px 1px 1px #f0f0ee; 
 }
 
 /* Navigation */
@@ -144,9 +151,10 @@ nav a:hover{
 
 .btn-grad:hover {
     background-position: right center;
-    color: #f0f0ee;
+    color: #da3a37;
     text-decoration: none;
-    transition: all 0.8s ease-in-out; 
+    transition: all 0.8s ease-in-out;
+    border-color: #f0f0ee;
  }
  
  #inscription{
@@ -158,10 +166,26 @@ nav a:hover{
  
  
  #insc {
-     background-image: linear-gradient(to right, #da3b37 0%, #27282a  51%, #da3b37  100%);
      padding: 5px 10px;
      font-size: 20px;
  }
+
+ #insc:hover {
+    border-color: #f0f0ee;
+    background-image: linear-gradient(to right, #27282a 0%, #414345  51%, #232526  100%);
+    color: #f0f0ee;            
+    border-radius: 10px; 
+    transition: all 0.8s ease-in-out; 
+}
+
+ .clignote {
+    color:#f0f0ee;
+    animation: clignote 4s linear infinite;
+    border-color: #f0f0ee;
+  }
+  @keyframes clignote {  
+    50% { opacity: 0.4; }
+  }
 
 /* Scroll */
 
@@ -600,9 +624,34 @@ footer span{
     color: white;
 }
 
-#mentions:hover{
+#mentionsLeg:hover{
     color: #f0f0ee;
 }
+
+/* Mentions Légales */
+
+#mentions{
+    width: 60%;
+    background-color:#f0f0ee;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    border: 2px solid black;
+
+}
+
+#legales {
+    background-color:#27282a;
+    width: 95%;
+    height: 2100px;
+    border: 2px solid black; 
+    margin: 50px auto; 
+}
+
+#legales p {
+    text-align: left;
+}
+
 
 
 
