@@ -7,7 +7,7 @@ const a = document.querySelectorAll('nav a');
 const button = document.querySelector('.btn-grad ');
 const inscription = document.querySelector('#inscription');
 const insc = document.querySelector('#insc');
-const header = document.querySelector('header');
+const header = document.querySelector('#navAnim');
 let height = header.clientHeight;
 
 

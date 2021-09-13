@@ -15,12 +15,6 @@ body {
     background-color:#27282a;
 }
 
-
-
-.logo {
-    margin: 50px;
-}
-
 h1 {
     z-index: 10;
     font-size: 80px;
@@ -237,9 +231,9 @@ nav.scroll {
 
 /* Header */
 
-/* header{
-    text-align: center;
-} */
+header{
+    height: 200px;
+}
 
 #num {
     color: #f0f0ee;
@@ -249,19 +243,20 @@ nav.scroll {
 }
 
 #logo{
-    width: 450px;
+    width: 75%;
 }
 
 .banniere{
-    width: 30%;
+    width: 40%;
     margin-top: 50px;
 }
 
+#navAnim{
+   text-align: center;
+}
 
 #taureau{
-    width: 60%; 
-    margin: 60px auto;
-    margin-top: 200px;
+    width: 65%; 
 }
 
 /* A propos */
@@ -431,10 +426,14 @@ left:0;
     align-items: center;
     background-color:#27282a;
     width: 95%;
-    height: 400px;
     margin-bottom: 50px; 
     border: 2px solid black;
     margin: auto;  
+    padding-bottom: 30px;
+}
+
+#avis{
+    margin-top: 0;
 }
 
 #client{
@@ -452,11 +451,6 @@ left:0;
     color:#da3b37;
     font-size: 30px;
     margin-left: 10px;
-}
-
-#ztxtAvis{
-    height: 874px;
-    margin-top: 0;
 }
 
 .slider .avis{
@@ -506,11 +500,11 @@ left:0;
     display: flex;
     flex-direction: column;
 }
-/* 
-.ztxt2{
-    margin-top: 0;
-} */
 
+iframe {
+    width: 100%;
+    height: auto;
+}
 
 /* Horaires */
 
@@ -520,9 +514,11 @@ left:0;
     align-items: center;
     background-color:#27282a;
     width: 95%;
-    margin: 50px auto;
+    margin: auto;
+    margin-top: 50px;
     font-size: 20px;
     border: 2px solid black; 
+    padding: 30px  0;
 }
 
 #horaires p {
@@ -674,6 +670,12 @@ footer span{
 
 #decon:hover{
     border-color: #f0f0ee;
+}
+
+/* Espace Membres */
+
+#profil {
+    text-align: center;
 }
 
 
