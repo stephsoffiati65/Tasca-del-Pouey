@@ -15,8 +15,6 @@ body {
     background-color:#27282a;
 }
 
-
-
 .logo {
     margin: 50px;
 }
@@ -45,7 +43,6 @@ h3 {
 
 .underRed {
     text-decoration: underline #da3b37;
-    color: #da3b37;
 }
 
 .underWhite {
@@ -56,23 +53,13 @@ h3 {
     font-style: italic;
 }
 
-.bold{
-    font-weight: bold;
-}
-
 .red {
     color: #da3b37;
-    text-shadow: 3px 3px 3px black;
 }
 
 .white {
     color: #f0f0ee;
     text-shadow: 3px 3px 3px black;
-}
-
-.black{
-    color: black;
-    text-shadow: 1px 1px 1px #f0f0ee; 
 }
 
 /* Navigation */
@@ -157,9 +144,9 @@ nav a:hover{
 
 .btn-grad:hover {
     background-position: right center;
+    color: #f0f0ee;
     text-decoration: none;
-    transition: all 0.8s ease-in-out;
-    border-color: #f0f0ee;
+    transition: all 0.8s ease-in-out; 
  }
  
  #inscription{
@@ -171,26 +158,10 @@ nav a:hover{
  
  
  #insc {
+     background-image: linear-gradient(to right, #da3b37 0%, #27282a  51%, #da3b37  100%);
      padding: 5px 10px;
      font-size: 20px;
  }
-
- #insc:hover {
-    border-color: #f0f0ee;
-    background-image: linear-gradient(to right, #27282a 0%, #414345  51%, #232526  100%);
-    color: #f0f0ee;            
-    border-radius: 10px; 
-    transition: all 0.8s ease-in-out; 
-}
-
- .clignote {
-    color:#f0f0ee;
-    animation: clignote 4s linear infinite;
-    border-color: #f0f0ee;
-  }
-  @keyframes clignote {  
-    50% { opacity: 0.2; }
-  }
 
 /* Scroll */
 
@@ -237,10 +208,6 @@ nav.scroll {
 
 /* Header */
 
-/* header{
-    text-align: center;
-} */
-
 #num {
     color: #f0f0ee;
     font-size: 30px;
@@ -252,14 +219,9 @@ nav.scroll {
     width: 450px;
 }
 
-.banniere{
-    width: 30%;
-    margin-top: 50px;
-}
-
 
 #taureau{
-    width: 60%; 
+    width: 1150px; 
     margin: 60px auto;
     margin-top: 200px;
 }
@@ -272,10 +234,13 @@ nav.scroll {
     margin: auto;
     margin-top: 50px;
     text-align: center;
-    border: 2px solid black;  
+    border: 2px solid black;
+    height: 800px;  
 }
 
-
+#ztxt{
+    height:1100px;
+}
 
 .texte{
     display: flex;
@@ -286,9 +251,10 @@ nav.scroll {
 .texte1 , .texte2 {
     background-color:#27282a;
     width: 45%;
+    height: 700px;
     margin-bottom: 50px;
+    height: 700px;
     border: 2px solid black; 
-    padding-bottom: 20px;
 }
  
 
@@ -394,6 +360,10 @@ left:0;
     background-size: cover;
 }
 
+#details {
+    height: 1000px;
+}
+
 /* Tapas */
 
 #tapas{
@@ -405,6 +375,9 @@ left:0;
      width:49%;
 }
 
+#details2 {
+    height: 500px;
+}
 
 #tap {
     line-height: 800px;
@@ -425,7 +398,7 @@ left:0;
 
 /* Avis */
 
-.avis{
+#avis{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -433,8 +406,7 @@ left:0;
     width: 95%;
     height: 400px;
     margin-bottom: 50px; 
-    border: 2px solid black;
-    margin: auto;  
+    border: 2px solid black;  
 }
 
 #client{
@@ -448,56 +420,11 @@ left:0;
     width: 60%;
 }
 
-.star{
+.fas{
     color:#da3b37;
     font-size: 30px;
     margin-left: 10px;
 }
-
-#ztxtAvis{
-    height: 874px;
-    margin-top: 0;
-}
-
-.slider .avis{
-    display: none;
-}
-
-.avis.active{
-    display: flex;
-    animation: fade 0.8s;
-}
-
-@keyframes fade{
-    from {
-        opacity:0
-    } to {
-        opacity:1
-    }
-}
-
-.cont-btn {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-}
-
-.btn-nav {
-    font-size: 60px;
-    opacity:0.2;
-    color: #27282a;
-    margin: 20px;
-    cursor: pointer;
-}
-
-.btn-nav:hover{
-    transition: all 0.5s ease-in-out; 
-    transform: scale(1.2);
-    opacity: 1;
-    color: #da3b37;
-}
-
 
 
 /* Réservations */
@@ -506,11 +433,17 @@ left:0;
     display: flex;
     flex-direction: column;
 }
-/* 
-.ztxt2{
-    margin-top: 0;
-} */
 
+.ztxt2{
+    height: 1350px;
+    border-bottom: none;
+    margin-top: 0;
+}
+
+#ztxtAvis{
+    height: 800px;
+    margin-top: 0;
+}
 
 /* Horaires */
 
@@ -520,6 +453,7 @@ left:0;
     align-items: center;
     background-color:#27282a;
     width: 95%;
+    height: 400px;
     margin: 50px auto;
     font-size: 20px;
     border: 2px solid black; 
@@ -538,15 +472,18 @@ left:0;
 
 /* Formulaire */
 
-.formulaire{
+#formulaire{
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color:#27282a;
     width: 95%;
-    margin: 50px auto;
+    height: 500px;
+    margin: auto;
     border: 2px solid black; 
 }
 
-.form1{
+form{
     text-align: left;
     color: #f0f0ee;
     font-size: 30px;
@@ -571,13 +508,21 @@ input:focus{
     width: 50px;
 }
 
-.valider {
+#reserver{
+    float: right;
     margin-top: 30px;
-    width: 35%;
+    width: 30%;
 }
 
-.formul{
+#reserver:hover{
+    border-color: #f0f0ee;
+}
+
+#formul{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
 }
 
 /* Footer */
@@ -592,7 +537,6 @@ footer{
     margin: auto;
     border: 2px solid black;
     border-bottom: none;
-    border-top: none;
     font-size: 15px;
 }
 
@@ -614,70 +558,9 @@ footer span{
     color: white;
 }
 
-.mentionsLeg:hover{
+#mentions:hover{
     color: #f0f0ee;
 }
-
-/* Mentions Légales */
-
-.containWhite{
-    width: 60%;
-    background-color:#f0f0ee;
-    margin: auto;
-    text-align: center;
-    border: 2px solid black;
-}
-
-.containBlack {
-    background-color:#27282a;
-    width: 95%;
-    border: 2px solid black; 
-    margin: 50px auto; 
-}
-
-.containBlack p {
-    text-align: left;
-}
-
-/* Inscription */
-
-#inscrBlack{
-    margin: 50px auto;
-}
-
-.none{
-    display: none;
-}
-
-/* Connexion */
-
-#conBlack {
-    margin: 50px auto;
-}
-
-#con{
-    float: right;
-}
-
-/* Espace Connecté */
-
-#compte{
-    float: right;
-    font-size: 20px;
-    margin-top: 5px;
-}
-
-#decon{
-    font-size: 20px;
-    padding: 5px;
-}
-
-#decon:hover{
-    border-color: #f0f0ee;
-}
-
-
-
 
 
 
