@@ -448,7 +448,7 @@ left:0;
 }
 
 .star{
-    color:#da3b37;
+
     font-size: 30px;
     margin-left: 10px;
 }
@@ -696,7 +696,10 @@ footer span{
     margin-bottom: 40px;
 }
 
-
+.checked{
+    color: #da3b37;
+    text-shadow: 3px 3px 3px black;
+}
 
 
 

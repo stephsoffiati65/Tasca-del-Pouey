@@ -1,4 +1,3 @@
-
 // Menu dynamique
 
 const rectNav = document.querySelector('.rectNav');
@@ -31,41 +30,29 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Slider
+// Système de notation
 
-const items = document.querySelectorAll('.avis');
-const nbSlide = items.length;
-const suivant = document.querySelector('.right');
-const precedent = document.querySelector('.left');
-let count = 0;
+const allStars = document.querySelectorAll(".fa-star");
 
-function slideSuivante () {
-    items[count].classList.remove('active');
+init();
 
-    if(count < nbSlide - 1){
-        count++;
-    } else {
-        count = 0
-    }
-
-    items[count].classList.add('active');
-    console.log(count);
+function init() {
+    allStars.forEach((star) => {
+        star.addEventListener("click", getRating);
+        star.addEventListener("mouseover", addCSS);
+        star.addEventListener("mouseleave", removeCSS);
+    });
 }
 
-suivant.addEventListener('click', slideSuivante);
-
-
-function slidePrecedente () {
-    items[count].classList.remove('active');
-
-    if(count > 0){
-        count--;
-    } else {
-        count = nbSlide - 1
-    }
-
-    items[count].classList.add('active');
+function getRating(e) {
+    console.log(e.target);
 }
 
-precedent.addEventListener('click', slidePrecedente);
+function addCSS(e, css = "checked") {
+    e.target.classList.add (css);
+}
+
+function removeCSS(e, css = "checked") {
+    e.target.classList.remove (css);
+}
 
