@@ -28,13 +28,15 @@
                 <a class="hoverNav" href="#tapas">Tapas</a>
                 <a class="hoverNav" href="#gins">Gins</a>
                 <a class="hoverNav" href="#avis">Avis</a>
+                <a class="hoverNav" href="#resaCon">Réservation</a>
                 <a href="espaceMembre.html"><button id="con" class="btn-grad">Mon compte</button></a>
             </div>
             <span class="none">
-                <p id="inscription"><span class="white">Pas encore de compte?</span> &ensp;<a href="inscription.html"><span
-                            id="insc" class="clignote white">Inscription</span></a> </p>
+                <p id="inscription"><span class="white">Pas encore de compte?</span> &ensp;<a
+                        href="inscription.html"><span id="insc" class="clignote white">Inscription</span></a> </p>
             </span>
-            <p id="compte"><span  class="white">Pierro@65</span> &ensp;<a href="index.html"><button id="decon" class="btn-grad">Déconnexion</button></a></p>
+            <p id="compte"><span class="white">Pierro@65</span> &ensp;<a href="index.html"><button id="decon"
+                        class="btn-grad">Déconnexion</button></a></p>
         </nav>
     </header>
     <div id="navAnim">
@@ -333,9 +335,93 @@
             <div class="btn-nav left"><i class="fas fa-chevron-circle-left"></i></div>
             <div class="btn-nav right"><i class="fas fa-chevron-circle-right"></i></div>
         </div>
-
-
     </div>
+
+    <div class="separation">
+        <div class="containSep">
+            <div id="rectSep" class="rectSep"></div>
+        </div>
+        <div class="containSep">
+            <div id="rectSep2" class="rectSep2"></div>
+        </div>
+    </div>
+
+    <div id="resaCon" class="containWhite">
+        
+        <h2 class="italic">Je <span class="underRed"> réserve</span></h2>
+
+        <!-- <div id="conBlack" class="formulaire">
+
+            <form class="form1">
+                <div class="formul">
+                    <div>
+                        <div>
+                            <label for="date">Date: </label><br>
+                            <input type="date" id="date" name="date" />
+                        </div>
+
+                        
+
+                    </div>
+
+                    <div>
+                        <div>
+                            <label for="heure">Heure: </label><br>
+                            <input type="time" id="heure" name="heure" required />
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+
+                <input class="btn-grad valider" type="submit" value="Réserver" />
+
+            </form>
+        </div> -->
+
+        <!--///////////////////////////////-->
+        <div class="formulaire">
+
+            <form class="form1">
+                <div class="formul">
+                    <div>
+                        <div>
+                            <label for="date">Date: </label><br>
+                            <input type="date" id="date" name="date" />
+                        </div>
+                        
+                        <div>
+                            <label for="nombre">Nombre: </label><br>
+                            <input id="nb" type="nombre" id="nombre" name="nombre" />
+                        </div>
+
+                       
+
+                    </div>
+
+                    <div>
+                        <div>
+                            <label for="heure">Heure: </label><br>
+                            <input type="time" id="heure" name="heure" required />
+                        </div>
+                        
+                        <div>
+                            <label for="pseudo">Pseudo:</label><br>
+                            <input type="text" id="pseudo" name="pseudo" required />
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <input class="btn-grad valider" type="submit" value="Réserver" />
+
+            </form>
+        </div>
+    </div>
+    </div>
+
 
     <footer>
         <p>© 2021 Copyright La Tasca del Pouey | <a class="mentionsLeg" href="/mentionsLegales.html"

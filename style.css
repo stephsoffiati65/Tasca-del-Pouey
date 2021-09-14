@@ -549,7 +549,14 @@ iframe {
     margin: 50px auto;
 }
 
-input{
+.formul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+input, textarea{
     text-align: center;
     font-size: 30px;
     width: 80%;
@@ -557,6 +564,7 @@ input{
     background-color:#494a4e ;
     outline: none;
     margin-bottom: 40px;
+    padding: 5px;
 }
 
 input:focus{
@@ -572,9 +580,7 @@ input:focus{
     width: 35%;
 }
 
-.formul{
-    display: flex;
-}
+
 
 /* Footer */
 
@@ -678,7 +684,17 @@ footer span{
     text-align: center;
 }
 
+#points {
+    width: 95%;
+}
 
+#nbPoints {
+    font-size: 50px;
+}
+
+#nbStars{
+    margin-bottom: 40px;
+}
 
 
 
