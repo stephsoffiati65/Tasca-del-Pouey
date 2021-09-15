@@ -1,0 +1,45 @@
+
+@media (max-width: 1450px){
+    nav{
+        width: 750px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 1350px){
+    .fab{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1250px){
+    nav{
+        width: 600px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    .fab{
+        padding: 3px;
+    }
+
+
+    #reseaux {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 1100px){
+    #logo{
+        width: 50%;
+    }
+}
+

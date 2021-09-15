@@ -651,15 +651,10 @@ footer span{
     display: none;
 }
 
-/* Connexion */
-
-#conBlack {
-    margin: 50px auto;
+#btnCon{
+    width: 43%;
 }
 
-#con{
-    float: right;
-}
 
 /* Espace Connecté */
 
@@ -700,6 +695,7 @@ footer span{
     color: #da3b37;
     text-shadow: 3px 3px 3px black;
 }
+
 
 
 
