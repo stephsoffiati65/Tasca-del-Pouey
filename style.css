@@ -18,10 +18,11 @@ body {
 h1 {
     z-index: 10;
     font-size: 80px;
+    transition: all 0.8s ease-in-out;
   }
 
 h2{
-    font-size: 50px;
+    font-size: clamp(20px, 5vw, 50px);
     text-decoration: underline;
 }
 
@@ -67,6 +68,10 @@ h3 {
 .black{
     color: black;
     text-shadow: 1px 1px 1px #f0f0ee; 
+}
+
+.none{
+    display: none;
 }
 
 /* Navigation */
@@ -243,7 +248,8 @@ header{
 }
 
 #logo{
-    width: 75%;
+    width: 450px;
+    transition: all 0.8s ease-in-out;
 }
 
 .banniere{
@@ -267,7 +273,8 @@ header{
     margin: auto;
     margin-top: 50px;
     text-align: center;
-    border: 2px solid black;  
+    border: 2px solid black; 
+    transition: all 0.5s ease-in-out;  
 }
 
 
@@ -351,6 +358,7 @@ left:0;
     width:60%;
     z-index: -1;
     border: 2px solid;
+    transition: all 0.5s ease-in-out; 
     }
     
 .contain{
@@ -447,10 +455,14 @@ left:0;
     width: 60%;
 }
 
+
+
 .star{
 
     font-size: 30px;
     margin-left: 10px;
+    color: #da3b37;
+    text-shadow: 3px 3px 3px black;
 }
 
 .slider .avis{
@@ -547,6 +559,7 @@ iframe {
     color: #f0f0ee;
     font-size: 30px;
     margin: 50px auto;
+    padding: 20px;
 }
 
 .formul{
@@ -596,6 +609,7 @@ footer{
     border-bottom: none;
     border-top: none;
     font-size: 15px;
+    transition: all 0.5s ease-in-out; 
 }
 
 footer a {
@@ -628,6 +642,7 @@ footer span{
     margin: auto;
     text-align: center;
     border: 2px solid black;
+    transition: all 0.5s ease-in-out; 
 }
 
 .containBlack {
@@ -643,13 +658,24 @@ footer span{
 
 /* Inscription */
 
-#inscrBlack{
-    margin: 50px auto;
+#photo {
+    width : 200px; 
+    height : 200px;
+    margin-left: 5%;
+    border: 2px solid #da3b37;
+    border-radius : 100px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 200px;
+    font-size: 11px;
+    background-color: #494a4e;
 }
 
-.none{
-    display: none;
+#file{
+    text-align: center;
+
 }
+
 
 #btnCon{
     width: 43%;
@@ -687,14 +713,43 @@ footer span{
     font-size: 50px;
 }
 
-#nbStars{
-    margin-bottom: 40px;
+
+/* Stars */
+
+.rating{
+   display: flex;
+   width: 80%;
+   margin-bottom: 40px;
+   transform: rotateY(180deg);
 }
 
-.checked{
-    color: #da3b37;
+.rating input{
+    display: none;
+}
+
+.rating label{
+    display: block;
+    cursor: pointer;
+    width: 50%;
+}
+
+.rating label::before{
+    content: '★';
+    position: relative;
+    display: block;
+    font-size: 50px;
+    color: #f0f0ee;
     text-shadow: 3px 3px 3px black;
 }
+
+.rating label:hover:before,
+.rating label:hover ~ label:before,
+.rating input:checked ~ label:before {
+    color: #da3b37;
+}
+
+
+
 
 
 

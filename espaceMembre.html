@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
-    <script src="scriptB.js" async></script>
+
+    <script src="script.js" async></script>
 
     <title>La Tasca del Pouey</title>
 </head>
@@ -27,6 +28,7 @@
                 <a class="hoverNav" href="#recompense">Récompenses</a>
                 <a class="hoverNav" href="#avisCon">Avis</a>
                 <a href="espaceConnecte.html"><button id="con" class="btn-grad">Retour au site</button></a>
+                <a class="none" id="icon"><i class="fas fa-bars"></i></a>
             </div>
             <span class="none">
                 <p id="inscription"><span class="white">Pas encore de compte?</span> &ensp;<a
@@ -125,19 +127,23 @@
 
                 <div id="nbStars">
                     <label for="password">Nombre d'étoiles:</label><br>
-                    <span><i class="fas fa-star black" data-star="1"></i></span>
-                    <span><i class="fas fa-star black" data-star="2"></i></span>
-                    <span><i class="fas fa-star black" data-star="3"></i></span>
-                    <span><i class="fas fa-star black" data-star="4"></i></span>
-                    <span><i class="fas fa-star black" data-star="5"></i></span>
+                    <div class="rating">
+                        <input type="radio" name="star" id="star1"><label for="star1"></label>
+                        <input type="radio" name="star" id="star2"><label for="star2"></label>
+                        <input type="radio" name="star" id="star3"><label for="star3"></label>
+                        <input type="radio" name="star" id="star4"><label for="star4"></label>
+                        <input type="radio" name="star" id="star5"><label for="star5"></label>
+
+                    </div>
                 </div>
+
 
                 <div>
                     <label for="comments">Commentaire:</label>
                     <textarea id="comments" name="comments"></textarea>
                 </div>
 
-                <input class="btn-grad valider" type="submit" value="Connexion" />
+                <input class="btn-grad valider" type="submit" value="Poster" />
 
             </form>
         </div>
