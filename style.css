@@ -96,7 +96,8 @@ h3 {
 
 .hoverNav:hover::after {
     transform: scaleX(1);
-  }
+}
+
 
 #left{
     float: left;

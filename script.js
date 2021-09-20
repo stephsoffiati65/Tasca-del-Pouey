@@ -31,6 +31,19 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Barre de navigation burger responsive
+ 
+
+    nav.addEventListener('click', () => { 
+        if(nav.className === ""){
+             nav.classList.add('responsive');
+             rectNav.classList.add('responsive');
+        } else {
+            nav.className === ""
+        }
+    })
+       
+
 // Slider
 
 const items = document.querySelectorAll('.avis');
@@ -49,7 +62,6 @@ function slideSuivante () {
     }
 
     items[count].classList.add('active');
-    console.log(count);
 }
 
 suivant.addEventListener('click', slideSuivante);
@@ -68,4 +80,6 @@ function slidePrecedente () {
 }
 
 precedent.addEventListener('click', slidePrecedente);
+
+
 

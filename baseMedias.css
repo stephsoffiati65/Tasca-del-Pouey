@@ -52,6 +52,46 @@
     }
 }
 
+    /* ///////////////////////////////////////////////////////// */
+
+    /* Burger */
+
+    /* nav.responsive{
+        height: 500px;
+        right: auto;
+    }
+
+    nav.responsive a:not(#icon){
+        display: block;
+        text-align: center;
+        background-color: darkgrey;
+        margin: 0;
+        position: relative;
+        top: 50px;
+        font-size: 50px;
+        width: 100%;
+    }
+
+    .rectNav.responsive{
+        height: 500px;
+        right: auto;
+    }
+
+    .rectNav.responsive a:not(#icon){
+        display: block;
+        text-align: center;
+        background-color: darkgrey;
+        margin: 0;
+        position: relative;
+        top: 50px;
+        font-size: 50px;
+        width: 100%;
+    }
+
+} */
+
+/* ///////////////////////////////////////////////////////////*/
+
 @media (max-width: 500px){
 
     #num{
@@ -71,7 +111,18 @@
 
 /* A propos */
 
-
+@media (max-width: 1650px){
+    #textAp{
+            display: block;
+        }
+    
+    #texte1Ap , #texte2Ap{
+            margin: auto;
+            margin-bottom: 50px;
+            width: 95%;
+        }
+   
+}
 
 /* PLats, Tapas, Gins  */
 
