@@ -3,7 +3,7 @@
 
 const rectNav = document.querySelector('.rectNav');
 nav = document.querySelector('nav');
-const a = document.querySelectorAll('nav a');
+const a = document.querySelectorAll('#menu a');
 const button = document.querySelector('.btn-grad ');
 const inscription = document.querySelector('#inscription');
 const insc = document.querySelector('#insc');
@@ -32,17 +32,54 @@ window.addEventListener('scroll', () => {
 });
 
 // Barre de navigation burger responsive
- 
 
-    nav.addEventListener('click', () => { 
-        if(nav.className === ""){
-             nav.classList.add('responsive');
-             rectNav.classList.add('responsive');
-        } else {
-            nav.className === ""
+const menu = document.querySelector('#menu');
+const iconI = document.querySelector('#iconI');
+const iconX = document.querySelector('#iconX');
+const html = document.querySelector('html');
+
+ 
+iconI.addEventListener('click', () => { 
+    if (menu.classList.contains("responsive")) {
+        menu.classList.remove("responsive");
+        nav.style.width = ("50px");
+        rectNav.style.width = ("50px");
+    } else {
+        menu.classList.add("responsive");
+        nav.style.width = ("100%");
+        nav.style.marginTop = ("0");
+        rectNav.style.width = ("100%");
+        iconX.style.display = ("block");
+        iconX.style.fontSize = ("50px");
+        iconX.style.color = ("#27282a");
+        iconI.style.display = ("none");
         }
-    })
-       
+})
+
+iconX.addEventListener('click', () => { 
+        menu.classList.remove("responsive");
+        nav.style.width = ("50px");
+        rectNav.style.width = ("50px");
+        iconX.style.display = ("none");
+        iconI.style.display = ("block");
+})
+
+
+html.addEventListener('click', () => {
+    if (menu.classList.contains("responsive")) {
+        menu.classList.remove("responsive");
+        nav.style.width = ("50px");
+        rectNav.style.width = ("50px");
+        iconX.style.display = ("none");
+        iconI.style.display = ("block");
+    }
+});
+
+iconI.addEventListener('click', (e) => {
+    e.stopPropagation();
+});
+
+   
 
 // Slider
 

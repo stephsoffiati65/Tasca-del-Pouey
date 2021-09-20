@@ -124,12 +124,16 @@ nav a:hover{
     color: #f0f0ee;
 }
 
+#icon{
+    content: "#";
+}
+
 .rectNav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #da3a37e5;
-    z-index: -1;
+    z-index: 10;
     transition: all 0.8s ease-in-out;
     height: 80px;
 }
@@ -228,7 +232,6 @@ nav.scroll {
 
 .rectNav a.scroll{
     color: #f0f0ee;
-    font-size: 20px;
 }
 
 .rectNav a.scroll:hover{

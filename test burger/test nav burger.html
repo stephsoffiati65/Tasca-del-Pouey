@@ -21,21 +21,27 @@
             <p id="num">05 62 95 00 00</p>
             <img id="logo" src="img/banniere-removebg-preview.png" alt="logo">
         </div>
-        <nav>
-            <div id="menu" class="rectNav">
-                <a class="hoverNav" href="#ztxt" >A propos</a>
-                <a class="hoverNav" href="#paella" >Plats</a>
-                <a class="hoverNav" href="#tapas" >Tapas</a>
-                <a class="hoverNav" href="#gins" >Gins</a>
-                <a class="hoverNav" href="#avis" >Avis</a>
-                <a class="hoverNav" href="#res" >Réservation</a>
-                <a href="connexion.html"><button class="btn-grad">Connexion</button></a>
-                <a id="iconI" class="none" ><i class="fas fa-bars"></i></a>
-                <a id="iconX" class="none" ><i class="fas fa-times-circle"></i></a>
-            </div>
+        <button class="ham">
+            <!-- X and menu icon SVGs from material icons https://material.io/resources/icons/ -->
+            <span  class="none menuIcon material-icons">
+                <i class="fas fa-bars"></i>
+            </span>
+            <span class="none xIcon material-icons">
+                <i class="fas fa-times"></i>
+            </span>
+        </button>
+        <ul class="menu rectNav">
+            <li><a class="menuLink hoverNav" href="ztxt">A propos</a></li>
+            <li><a class="menuLink hoverNav" href="paella">Plats</a></li>
+            <li><a class="menuLink hoverNav" href="tapas">Tapas</a></li>
+            <li><a class="menuLink hoverNav" href="gins">Gins</a></li>
+            <li><a class="menuLink hoverNav" href="#avis">Avis</a></li>
+            <li><a class="menuLink hoverNav" href="#res">Réservation</a></li>
+            <li><a href="connexion.html"><button class="btn-grad">Connexion</button></a></li>
+            <li><a class="none" id="icon"><i class="fas fa-bars"></i></a></li>
             <p id="inscription"><span class="white">Pas encore de compte?</span> &ensp;<a href="inscription.html"><span
-                        id="insc" class="clignote white">Inscription</span></a> </p>
-        </nav>
+                id="insc" class="clignote white">Inscription</span></a> </p>
+        </ul>
     </header>
 
     <div id="navAnim">

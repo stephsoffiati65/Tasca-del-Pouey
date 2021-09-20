@@ -30,10 +30,11 @@
     }
     
     nav a, #inscription{
-       display: none;   
+       display: none; 
+       
     }
 
-    #iconI{
+    #icon{
         display: block;
         font-size: 30px;
     }
@@ -49,30 +50,47 @@
     header{
         height: 100px;
     }
+}
+
+    /* ///////////////////////////////////////////////////////// */
 
     /* Burger */
 
-    #menu.responsive a{
+    /* nav.responsive{
+        height: 500px;
+        right: auto;
+    }
+
+    nav.responsive a:not(#icon){
         display: block;
         text-align: center;
-        background-color:#da3a37;
+        background-color: darkgrey;
         margin: 0;
-        padding: 10px;
-        font-size: 30px;
+        position: relative;
+        top: 50px;
+        font-size: 50px;
+        width: 100%;
     }
 
-   .rectNav.responsive{
+    .rectNav.responsive{
+        height: 500px;
+        right: auto;
+    }
+
+    .rectNav.responsive a:not(#icon){
         display: block;
+        text-align: center;
+        background-color: darkgrey;
+        margin: 0;
+        position: relative;
+        top: 50px;
+        font-size: 50px;
+        width: 100%;
     }
 
-    nav.responsive {
-        margin-top: 0;
-        height: 200px;
-    }
+} */
 
-
-}
-
+/* ///////////////////////////////////////////////////////////*/
 
 @media (max-width: 500px){
 
