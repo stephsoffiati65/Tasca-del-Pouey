@@ -3,7 +3,7 @@
 
 @media (max-width: 1450px){
     nav{
-        width: 750px;
+        width: 780px;
     }
 
     nav a , .btn-grad{
@@ -56,9 +56,16 @@
         display: block;
         text-align: center;
         background-color:#da3a37;
+        border-bottom: 1px solid #27282a;
         margin: 0;
         padding: 10px;
-        font-size: 30px;
+        font-size: 25px;
+    }
+
+    #menu.responsive #insNav{
+        background-color:#27282a;
+        border:none;
+        font-size: 18px;
     }
 
    .rectNav.responsive{
@@ -70,9 +77,7 @@
         height: 200px;
     }
 
-
 }
-
 
 @media (max-width: 500px){
 

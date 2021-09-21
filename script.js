@@ -38,7 +38,6 @@ const iconI = document.querySelector('#iconI');
 const iconX = document.querySelector('#iconX');
 const html = document.querySelector('html');
 
- 
 iconI.addEventListener('click', () => { 
     if (menu.classList.contains("responsive")) {
         menu.classList.remove("responsive");

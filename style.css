@@ -118,6 +118,7 @@ nav a{
     font-size: 25px;
     font-weight: bold;
     margin-right: 20px;
+    transition: all 0.8s ease-in-out; 
 }
 
 nav a:hover{
@@ -165,12 +166,16 @@ nav a:hover{
     transition: all 0.8s ease-in-out;
     border-color: #f0f0ee;
  }
- 
+
  #inscription{
      float: right;
      font-size: 20px;
      margin-top: 5px;
      transition: all 0.8s ease-in-out; 
+ }
+
+ #insNav{
+    display: none;
  }
  
  
@@ -222,9 +227,6 @@ nav.scroll {
     font-size: 18px;   
 }
 
-#insc.scroll {
-    font-size: 18px;   
-}
 
 .rectNav a.scroll{
     color: #f0f0ee;
@@ -350,7 +352,7 @@ left:0;
     right: 30px;  
 }
 
-/* Plats/ Taps / Gins */
+/* Plats/ Tapas / Gins */
 
 .background{
     position: absolute;
@@ -690,14 +692,6 @@ footer span{
     margin-top: 5px;
 }
 
-#decon{
-    font-size: 20px;
-    padding: 5px;
-}
-
-#decon:hover{
-    border-color: #f0f0ee;
-}
 
 /* Espace Membres */
 
