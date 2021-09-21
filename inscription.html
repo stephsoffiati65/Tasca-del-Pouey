@@ -22,7 +22,7 @@
             <img id="logo" src="img/banniere-removebg-preview.png" alt="logo">
         </div>
         <nav>
-            <div class="rectNav">
+            <div id="menu" class="rectNav">
                 <a class="hoverNav" href="/index.html#ztxt">A propos</a>
                 <a class="hoverNav" href="/index.html#paella">Plats</a>
                 <a class="hoverNav" href="/index.html#tapas">Tapas</a>
@@ -30,7 +30,8 @@
                 <a class="hoverNav" href="/index.html#avis">Avis</a>
                 <a class="hoverNav" href="/index.html#res">Réservation</a>
                 <a href="connexion.html"><button id="con" class="btn-grad">Connexion</button></a>
-                <a class="none" id="icon"><i class="fas fa-bars"></i></a>
+                <a id="iconI" class="none" ><i class="fas fa-bars"></i></a>
+                <a id="iconX" class="none" ><i class="fas fa-times-circle"></i></a>
             </div>
 
             <span class="none">
@@ -60,30 +61,15 @@
                             <label for="nom">Nom:</label><br>
                             <input type="text" id="nom" name="nom" required />
                         </div>
-
-                        <div>
-                            <label for="mail">Adresse mail:</label><br>
-                            <input type="email" id="mail" name="mail" />
-                        </div>
-
-                        <div>
-                            <label for="pseudo">Pseudo:</label><br>
-                            <input type="text" id="pseudo" name="pseudo" required />
-                        </div>
-
-
-
-                        <div>
-                            <label for="password">Mot de passe:</label><br>
-                            <input type="password" id="password" name="password" required />
-                        </div>
-
-                    </div>
-
-                    <div>
+                        
                         <div>
                             <label for="prenom">Prénom:</label><br>
                             <input type="text" id="prenom" name="prenom" required />
+                        </div>
+                        
+                        <div>
+                            <label for="mail">Adresse mail:</label><br>
+                            <input type="email" id="mail" name="mail" />
                         </div>
 
                         <div>
@@ -91,12 +77,24 @@
                             <input type="date" id="date" name="date" />
                         </div>
 
+                    </div>
 
+                    <div>
+                        <div>
+                            <label for="pseudo">Pseudo:</label><br>
+                            <input type="text" id="pseudo" name="pseudo" required />
+                        </div>
+                        
                         <div>
                             <label for="telephone">Numéro de téléphone:</label><br>
                             <input type="number" id="telephone" name="telephone" />
                         </div>
 
+                        <div>
+                            <label for="password">Mot de passe:</label><br>
+                            <input type="password" id="password" name="password" required />
+                        </div>
+                        
                         <div>
                             <label for="confirmPassword">Confirmation:</label><br>
                             <input type="password" id="confirmPassword" name="confirmPassword" required />

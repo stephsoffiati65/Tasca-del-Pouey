@@ -150,8 +150,8 @@ nav a:hover{
 
 .btn-grad {
     background-image: linear-gradient(to right, #27282a 0%, #414345  51%, #232526  100%);
-    padding: 15px 25px;
-    font-size: 25px;
+    padding: 8px;
+    font-size: 20px;
     text-align: center;
     background-size: 200% auto;
     color: #f0f0ee;            
@@ -217,10 +217,6 @@ nav.scroll {
     right: 100%;
 }
 
-.btn-grad.scroll{
-    font-size: 20px;
-    padding: 5px 12px;
-}
 
 #inscription.scroll {
     font-size: 18px;   
@@ -257,7 +253,7 @@ header{
 }
 
 .banniere{
-    width: 40%;
+    width: 55%;
     margin-top: 50px;
 }
 

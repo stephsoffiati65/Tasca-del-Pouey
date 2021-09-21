@@ -22,7 +22,7 @@
             <img id="logo" src="img/banniere-removebg-preview.png" alt="logo">
         </div>
         <nav>
-            <div class="rectNav">
+            <div id="menu" class="rectNav">
                 <a class="hoverNav" href="#ztxt">A propos</a>
                 <a class="hoverNav" href="#paella">Plats</a>
                 <a class="hoverNav" href="#tapas">Tapas</a>
@@ -30,7 +30,8 @@
                 <a class="hoverNav" href="#avis">Avis</a>
                 <a class="hoverNav" href="#resaCon">Réservation</a>
                 <a href="espaceMembre.html"><button id="con" class="btn-grad">Mon compte</button></a>
-                <a class="none" id="icon"><i class="fas fa-bars"></i></a>
+                <a id="iconI" class="none" ><i class="fas fa-bars"></i></a>
+                <a id="iconX" class="none" ><i class="fas fa-times-circle"></i></a>
             </div>
             <span class="none">
                 <p id="inscription"><span class="white">Pas encore de compte?</span> &ensp;<a
@@ -362,23 +363,23 @@
                         </div>
                         
                         <div>
-                            <label for="nombre">Nombre: </label><br>
-                            <input id="nb" type="nombre" id="nombre" name="nombre" />
-                        </div>   
-
-                    </div>
-
-                    <div>
-                        <div>
                             <label for="heure">Heure: </label><br>
                             <input type="time" id="heure" name="heure" required />
                         </div>
+                           
+                    </div>
+
+                    <div>
+                                  
+                        <div>
+                            <label for="nombre">Nombre: </label><br>
+                            <input id="nb" type="nombre" id="nombre" name="nombre" />
+                        </div>  
                         
                         <div>
                             <label for="pseudo">Pseudo:</label><br>
                             <input type="text" id="pseudo" name="pseudo" required />
                         </div>
-
 
                     </div>
                 </div>
