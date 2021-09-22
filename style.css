@@ -38,6 +38,14 @@ h3 {
     padding: 20px;
 }
 
+.par2{
+    color: #27282a;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 20px; 
+    border-bottom: 2px solid #27282a;
+}
+
 .underRed {
     text-decoration: underline #da3b37;
     color: #da3b37;
@@ -595,6 +603,9 @@ input:focus{
     width: 35%;
 }
 
+.modifier{
+    margin-left: 20px;
+}
 
 
 /* Footer */
@@ -743,7 +754,24 @@ footer span{
 
 /* Admin */
 
+#consultResa{
+    background-color:#27282a;
+    width: 95%;
+    margin-bottom: 50px;
+    border: 2px solid black; 
+    padding-bottom: 20px;
+}
 
+.nvText{
+  font-size: 20px;  
+}
+
+.bilanResa{
+    background-color: #da3a37;
+    margin: 50px auto;
+    width: 80%;
+    border: 2px solid #f0f0ee;
+}
 
 
 
