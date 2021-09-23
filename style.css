@@ -525,7 +525,7 @@ left:0;
 
 iframe {
     width: 100%;
-    height: auto;
+    height: 400px;
 }
 
 /* Horaires */
@@ -544,9 +544,13 @@ iframe {
 }
 
 #horaires p {
-    width: 30%;
     color: #f0f0ee;
-    text-align: left;
+    text-align: left;  
+}
+
+#map{
+    width: 60%;
+    margin: 30px;
 }
 
 .resa {

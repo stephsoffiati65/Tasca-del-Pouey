@@ -185,7 +185,7 @@
     #horaires p{
         text-align: center;
         margin: auto;
-        width: 60%;
+        width: 95%;
     }
 
     h1{
@@ -198,6 +198,16 @@
 
     .modifier{
         padding: 5px;
+    }
+
+    iframe{
+        height: 250px;
+        margin-bottom: 30px;
+    }
+
+    #map{
+        width: 90%;
+        
     }
 
 }
