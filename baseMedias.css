@@ -108,7 +108,28 @@
             margin-bottom: 50px;
             width: 95%;
         }
-   
+}
+
+@media (max-width: 1100px){
+    .imgAp{
+    width: 60%;
+    margin: auto;
+
+    }
+}
+
+@media (max-width: 1100px){
+    .imgAp{
+    width: 60%;
+    margin: auto; 
+    }  
+}
+
+@media (max-width: 650px){
+    .imgAp{
+    width: 100%;
+    margin: auto; 
+    }  
 }
 
 /* PLats, Tapas, Gins  */
