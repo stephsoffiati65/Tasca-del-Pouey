@@ -37,23 +37,22 @@
 
             <span class="none">
                 <p id="inscription"><span class="white">Pas encore de compte?</span> &ensp;<a
-                        href="https://stephsoffiati65.github.io/Tasca-del-Pouey/inscription"><span id="insc" class="clignote white">Inscription</span></a> </p>
+                        href="https://stephsoffiati65.github.io/Tasca-del-Pouey/inscription"><span id="insc"
+                            class="clignote white">Inscription</span></a> </p>
             </span>
 
         </nav>
     </header>
-    <div id="navAnim">
-        <img id="taureau" src="img/taureau.png" alt="taureau">
-    </div>
+    <div id="navAnim"></div>
 
     <!-- Formulaire Inscription -->
 
-    <div id="inscrWhite" class="containWhite">
-        <img class="banniere" src="img/banniere.png" alt="logo">
+    <div id="inscrWhite" class="containWhite sansTaureau">
         <h2 class="italic">Formulaire<span class="underRed"> d'inscription</span></h2>
 
-
         <div id="inscrBlack" class="formulaire">
+
+            <img id="taureauIns" src="img/taureau.png" alt="taureau">
 
             <form class="form1">
                 <div class="formul">
@@ -62,12 +61,12 @@
                             <label for="nom">Nom:</label><br>
                             <input type="text" id="nom" name="nom" required />
                         </div>
-                        
+
                         <div>
                             <label for="prenom">Prénom:</label><br>
                             <input type="text" id="prenom" name="prenom" required />
                         </div>
-                        
+
                         <div>
                             <label for="mail">Adresse mail:</label><br>
                             <input type="email" id="mail" name="mail" />
@@ -85,7 +84,7 @@
                             <label for="pseudo">Pseudo:</label><br>
                             <input type="text" id="pseudo" name="pseudo" required />
                         </div>
-                        
+
                         <div>
                             <label for="telephone">Numéro de téléphone:</label><br>
                             <input type="number" id="telephone" name="telephone" />
@@ -95,7 +94,7 @@
                             <label for="password">Mot de passe:</label><br>
                             <input type="password" id="password" name="password" required />
                         </div>
-                        
+
                         <div>
                             <label for="confirmPassword">Confirmation:</label><br>
                             <input type="password" id="confirmPassword" name="confirmPassword" required />
@@ -103,18 +102,21 @@
                     </div>
                 </div>
                 <div id="file">
-                    <label  for="avatar">Photo de profil:</label>
+                    <label for="avatar">Photo de profil:</label>
                     <input id="photo" type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
                 </div>
-                <a href="connexion.html"><input class="btn-grad valider" type="submit" value="Inscription" /></a>
+
             </form>
+            <a href="connexion.html"><input id="btn-Ins" class="btn-grad valider" type="submit"
+                    value="Inscription" /></a>
         </div>
     </div>
 
 
     <footer>
-        <p>© 2021 Copyright La Tasca del Pouey | <a class="mentionsLeg" href="https://stephsoffiati65.github.io/Tasca-del-Pouey//mentionsLegales"
-                target="_blank">Mentions légales</a> | Conception et
+        <p>© 2021 Copyright La Tasca del Pouey | <a class="mentionsLeg"
+                href="https://stephsoffiati65.github.io/Tasca-del-Pouey//mentionsLegales" target="_blank">Mentions
+                légales</a> | Conception et
             réalisation : <span>Soffiati Stéphane</span> </p>
         <p id="reseaux">
             <a href="https://www.facebook.com/pages/La%20Tasca%20Del%20Pouey/128652364413084/" target="_blank"><i

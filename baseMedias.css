@@ -251,7 +251,38 @@
 }
 
 /* Connexion, Inscription  */
+
+@media (max-width: 1650px){
     
+    #formIns{
+        display: block; 
+    }
+
+    #form1Ins{
+        width: 60%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .sansTaureau{
+        margin-top: 50px;
+    }  
+}
+
+@media (max-width: 700px){
+    
+    #taureauIns{
+        width: 500px;
+    } 
+}
+
+@media (max-width: 550px){
+    
+    #taureauIns{
+        width: 350px;
+    } 
+}
+   
 
 @media (max-width: 550px){
     #btnCon{
@@ -268,6 +299,7 @@
     .valider{
         width: 60%;
     }
+
 }
 
 /* Séparations */

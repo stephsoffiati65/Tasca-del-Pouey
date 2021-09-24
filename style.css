@@ -567,6 +567,7 @@ iframe {
 
 .formulaire{
     display: flex;
+    justify-content: space-between;
     background-color:#27282a;
     width: 95%;
     margin: 50px auto;
@@ -577,7 +578,7 @@ iframe {
     text-align: left;
     color: #f0f0ee;
     font-size: 30px;
-    margin: 50px auto;
+    margin: auto;
     padding: 20px;
 }
 
@@ -703,6 +704,14 @@ footer span{
     width: 43%;
 }
 
+#inscrBlack{
+    display: block;
+}
+
+#btn-Ins{
+    margin: 30pxauto;
+}
+
 
 /* Espace Connecté */
 
@@ -782,6 +791,16 @@ footer span{
     width: 80%;
     border: 2px solid #f0f0ee;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
