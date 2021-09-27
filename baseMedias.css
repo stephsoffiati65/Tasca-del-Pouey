@@ -227,8 +227,11 @@
     }
 
     #map{
-        width: 90%;
-        
+        width: 90%;   
+    }
+
+    #xl{
+        font-size: 25px;
     }
 
 }
@@ -254,11 +257,11 @@
 
 @media (max-width: 1650px){
     
-    #formIns{
+    #formCon{
         display: block; 
     }
 
-    #form1Ins{
+    #form1Con{
         width: 60%;
         margin: auto;
         text-align: center;

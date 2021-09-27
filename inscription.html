@@ -54,7 +54,7 @@
 
             <img id="taureauIns" src="img/taureau.png" alt="taureau">
 
-            <form class="form1">
+            <form id="formIns" class="form1">
                 <div class="formul">
                     <div>
                         <div>
@@ -92,12 +92,12 @@
 
                         <div>
                             <label for="password">Mot de passe:</label><br>
-                            <input type="password" id="password" name="password" required />
+                            <input type="password" id="passwordIns" name="password" required />
                         </div>
 
                         <div>
                             <label for="confirmPassword">Confirmation:</label><br>
-                            <input type="password" id="confirmPassword" name="confirmPassword" required />
+                            <input type="password" id="confirmPasswordIns" name="confirmPassword" required />
                         </div>
                     </div>
                 </div>
@@ -105,10 +105,13 @@
                     <label for="avatar">Photo de profil:</label>
                     <input id="photo" type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
                 </div>
+                <div id="btn-Ins">
+                    <input  class="btn-grad valider" type="submit"
+                    value="Inscription" />
+                </div>
 
             </form>
-            <a href="connexion.html"><input id="btn-Ins" class="btn-grad valider" type="submit"
-                    value="Inscription" /></a>
+            
         </div>
     </div>
 
@@ -126,6 +129,19 @@
                     class="fab fa-facebook-messenger white"></i></a>
         </p>
     </footer>
+
+    <script>
+        const pwdInput = document.querySelector("#passwordIns");
+        const confirmPwdInput = document.querySelector("#confirmPasswordIns");
+        const formIns = document.querySelector("#formIns");
+
+        document.querySelector("#formIns").addEventListener("submit", e => {
+            if (pwdInput.value !== confirmPwdInput.value) {
+                e.preventDefault();
+                alert("Le mot de passe et sa confirmation doivent être identiques !");
+            }
+        });
+    </script>
 
 </body>
 

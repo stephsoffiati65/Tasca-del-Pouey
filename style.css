@@ -78,6 +78,10 @@ h3 {
     text-shadow: 1px 1px 1px #f0f0ee; 
 }
 
+#xl{
+    font-size: 35px;
+}
+
 .none{
     display: none;
 }
@@ -618,6 +622,10 @@ input:focus{
     margin: 10px auto;
 }
 
+#signature{
+    float: right;
+}
+
 
 /* Footer */
 
@@ -709,7 +717,7 @@ footer span{
 }
 
 #btn-Ins{
-    margin: 30pxauto;
+    text-align: center;
 }
 
 
