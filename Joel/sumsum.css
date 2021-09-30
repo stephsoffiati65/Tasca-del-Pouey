@@ -1,0 +1,47 @@
+body, html{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.contain{
+  position:relative;
+  height:50vw;
+  width:100vw;
+  display: grid;
+  place-items: center;
+}
+
+.rect{
+  position: absolute;
+  width:50vw;
+  height:100px;
+  background-color: rgba(165, 42, 42, 0.808);
+  left:0;
+}
+
+#tri{
+    display : inline-block;
+    height : 0;
+    width : 0;
+    border-right : 100px solid transparent;
+    border-bottom : 100px solid rgba(165, 42, 42, 0.808);
+    margin-left: 50%;
+   }
+
+h1{
+  z-index: 10;
+  color:white;
+}
+
+.background{
+  position: absolute;
+  height:30vw;
+  width:70vw;
+  background-image: url(./E9G6aDcUcAAk3wU.jpg);
+  z-index: -1;
+}
+
+#test{
+  display: flex;
+}
