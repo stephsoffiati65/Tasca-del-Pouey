@@ -1,9 +1,9 @@
 DROP TABLE IF EXISTS contenir;
 DROP TABLE IF EXISTS avis;
 DROP TABLE IF EXISTS tables;
+DROP TABLE IF EXISTS menus;
 DROP TABLE IF EXISTS produits;
 DROP TABLE IF EXISTS restaurants;
-DROP TABLE IF EXISTS menus;
 DROP TABLE IF EXISTS membres;
 
 CREATE TABLE membres (
@@ -26,6 +26,22 @@ CREATE TABLE avis (
     CONSTRAINT avis_ibfk_1 FOREIGN KEY (id_membre) REFERENCES membres (id_membre)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+CREATE TABLE produits (
+    id_produit BIGINT NOT NULL AUTO_INCREMENT,
+    nom_produit VARCHAR(50) NOT NULL,
+    type_produit VARCHAR(50) NOT NULL,
+    prix_produit FLOAT NOT NULL,
+    PRIMARY KEY (id_produit)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE menus (
+    id_menu BIGINT NOT NULL AUTO_INCREMENT,
+    nom_menu VARCHAR(50) NOT NULL,
+    prix_menu FLOAT NOT NULL,
+    PRIMARY KEY (id_menu)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 CREATE TABLE restaurants (
     id_restaurant BIGINT NOT NULL AUTO_INCREMENT,
@@ -33,7 +49,11 @@ CREATE TABLE restaurants (
     horaire_restaurant TEXT NOT NULL,
     pseudoAdmin_restaurant VARCHAR(50) NOT NULL,
     passwordAdmin_restaurant VARCHAR(50) NOT NULL,
-    PRIMARY KEY (id_restaurant)
+    id_produit BIGINT NOT NULL,
+    id_menu BIGINT NOT NULL,
+    PRIMARY KEY (id_restaurant),
+    CONSTRAINT restaurants_ibfk_1 FOREIGN KEY (id_produit) REFERENCES produits (id_produit),
+    CONSTRAINT restaurants_ibfk_2 FOREIGN KEY (id_menu) REFERENCES menus (id_menu)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE tables (
@@ -46,28 +66,6 @@ CREATE TABLE tables (
     CONSTRAINT tables_ibfk_1 FOREIGN KEY (id_restaurant) REFERENCES restaurants (id_restaurant),
     CONSTRAINT tables_ibfk_2 FOREIGN KEY (id_membre) REFERENCES membres (id_membre)  
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-CREATE TABLE produits (
-    id_produit BIGINT NOT NULL AUTO_INCREMENT,
-    nom_produit VARCHAR(50) NOT NULL,
-    type_produit VARCHAR(50) NOT NULL,
-    prix_produit FLOAT NOT NULL,
-    id_restaurant BIGINT NOT NULL,
-    PRIMARY KEY (id_produit),
-    CONSTRAINT produits_ibfk_1 FOREIGN KEY (id_restaurant) REFERENCES restaurants (id_restaurant)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-CREATE TABLE menus (
-    id_menu BIGINT NOT NULL AUTO_INCREMENT,
-    nom_menu VARCHAR(50) NOT NULL,
-    prix_menu FLOAT NOT NULL,
-    id_restaurant BIGINT NOT NULL,
-    PRIMARY KEY (id_menu),
-    CONSTRAINT menus_ibfk_1 FOREIGN KEY (id_restaurant) REFERENCES restaurants (id_restaurant)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
 
 CREATE TABLE contenir (
     id_produit BIGINT NOT NULL,

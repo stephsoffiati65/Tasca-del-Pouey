@@ -11,6 +11,7 @@
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
     <script src="script.js" async></script>
+    <script src="slider.js" async></script>
 
     <title>La Tasca del Pouey</title>
 </head>
@@ -29,14 +30,14 @@
                 <a class="hoverNav" href="#gins">Gins</a>
                 <a class="hoverNav" href="#avis">Avis</a>
                 <a class="hoverNav" href="#resaCon">Réservation</a>
-                <a href="https://stephsoffiati65.github.io/Tasca-del-Pouey/espaceMembre"><button class="btn-grad">Compte</button></a>
-                <a href="https://stephsoffiati65.github.io/Tasca-del-Pouey/index"><button class="btn-grad">Déconnexion</button></a>
+                <a href="espaceMembre.html"><button class="btn-grad">Compte</button></a>
+                <a href="index.html"><button class="btn-grad">Déconnexion</button></a>
                 <a id="iconI" class="none" ><i class="fas fa-bars"></i></a>
                 <a id="iconX" class="none" ><i class="fas fa-times-circle"></i></a>
             </div>
             <span class="none">
                 <p id="inscription"><span class="white">Pas encore de compte?</span> &ensp;<a
-                        href="https://stephsoffiati65.github.io/Tasca-del-Pouey/inscription"><span id="insc" class="clignote white">Inscription</span></a> </p>
+                        href="inscription.html"><span id="insc" class="clignote white">Inscription</span></a> </p>
             </span>
             <p id="compte"><span class="white">Pierro@65</span> &ensp;
         </nav>
@@ -47,7 +48,6 @@
 
     <!-- A propos -->
 
-   
     <div id="ztxt" class="zoneTexte">
         <img class="banniere" src="img/banniere.png" alt="logo">
         <h2 class="italic">Qui <span class=" underRed">sommes</span> nous?</h2>
@@ -56,7 +56,7 @@
             <div id="texte1Ap" class="texte1">
                 <h3> <span class="white">CUISINE </span> <span class="red">TRADITIONNELLE</span> </h3>
                 <p class="par">
-                    <img class="imgAp" src="img/tradition3.jpg" alt="Cuisine traditionnelle">
+                    <img class="imgAp" src="img/tradition3.jpg" alt="Cuisine traditionnelle"><br>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nihil nam rerum commodi modi,
                     expedita doloremque nulla excepturi facere recusandae, ipsum quia quaerat sit deserunt culpa impedit
                     veniam cumque dolor, rem temporibus ipsa incidunt officia tempore error! Consequatur, non asperiores
@@ -70,7 +70,7 @@
             <div id="texte2Ap" class="texte2">
                 <h3> <span class="white">AMBIANCE </span> <span class="red">ATYPIQUE</span> </h3>
                 <p class="par">
-                    <img class="imgAp" src="img/ambiance4.jpg" alt="Ambiance atypique">
+                    <img class="imgAp" src="img/ambiance4.jpg" alt="Ambiance atypique"><br>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nihil nam rerum commodi modi,
                     expedita doloremque nulla excepturi facere recusandae, ipsum quia quaerat sit deserunt culpa impedit
                     veniam cumque dolor, rem temporibus ipsa incidunt officia tempore error! Consequatur, non asperiores
@@ -377,28 +377,15 @@
                         </div>
                         
                         <div>
-                            <label for="pseudo">Pseudo:</label><br>
-                            <input type="text" id="pseudo" name="pseudo" required />
-                        </div>
-                        
-                        
-                           
-                    </div>
-
-                    <div>
-                        
-                        <div>
                             <label for="heure">Heure: </label><br>
                             <input type="time" id="heure" name="heure" required />
                         </div>
                                   
                         <div>
-                            <label for="nombre">Nombre: </label><br>
+                            <label for="nombre">Nombre de personnes: </label><br>
                             <input id="nb" type="nombre" id="nombre" name="nombre" />
                         </div>  
                         
-   
-
                     </div>
                 </div>
 
@@ -411,7 +398,7 @@
 
 
     <footer>
-        <p>© 2021 Copyright La Tasca del Pouey | <a class="mentionsLeg" href="https://stephsoffiati65.github.io/Tasca-del-Pouey/mentionsLegales"
+        <p>© 2021 Copyright La Tasca del Pouey | <a class="mentionsLeg" href="/mentionsLegales.html"
                 target="_blank">Mentions légales</a> | Conception et
             réalisation : <span>Soffiati Stéphane</span> </p>
         <p id="reseaux">

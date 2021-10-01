@@ -3,7 +3,7 @@
 
 const rectNav = document.querySelector('.rectNav');
 nav = document.querySelector('nav');
-const a = document.querySelectorAll('nav a');
+const a = document.querySelectorAll('#menu a');
 const button = document.querySelector('.btn-grad ');
 const inscription = document.querySelector('#inscription');
 const insc = document.querySelector('#insc');
@@ -31,55 +31,55 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Slider
+// Barre de navigation burger responsive
 
-const items = document.querySelectorAll('.avis');
-const nbSlide = items.length;
-const suivant = document.querySelector('.right');
-const precedent = document.querySelector('.left');
-let count = 0;
+const menu = document.querySelector('#menu');
+const iconI = document.querySelector('#iconI');
+const iconX = document.querySelector('#iconX');
+const html = document.querySelector('html');
 
-function slideSuivante () {
-    items[count].classList.remove('active');
-
-    if(count < nbSlide - 1){
-        count++;
+iconI.addEventListener('click', () => { 
+    if (menu.classList.contains("responsive")) {
+        menu.classList.remove("responsive");
+        nav.style.width = ("50px");
+        rectNav.style.width = ("50px");
     } else {
-        count = 0
+        menu.classList.add("responsive");
+        nav.style.width = ("100%");
+        nav.style.marginTop = ("0");
+        rectNav.style.width = ("100%");
+        iconX.style.display = ("block");
+        iconX.style.fontSize = ("50px");
+        iconX.style.color = ("#27282a");
+        iconI.style.display = ("none");
+        }
+})
+
+iconX.addEventListener('click', () => { 
+        menu.classList.remove("responsive");
+        nav.style.width = ("50px");
+        rectNav.style.width = ("50px");
+        iconX.style.display = ("none");
+        iconI.style.display = ("block");
+})
+
+
+html.addEventListener('click', () => {
+    if (menu.classList.contains("responsive")) {
+        menu.classList.remove("responsive");
+        nav.style.width = ("50px");
+        rectNav.style.width = ("50px");
+        iconX.style.display = ("none");
+        iconI.style.display = ("block");
     }
+});
 
-    items[count].classList.add('active');
-    console.log(count);
-}
+iconI.addEventListener('click', (e) => {
+    e.stopPropagation();
+});
 
-suivant.addEventListener('click', slideSuivante);
-
-
-function slidePrecedente () {
-    items[count].classList.remove('active');
-
-    if(count > 0){
-        count--;
-    } else {
-        count = nbSlide - 1
-    }
-
-    items[count].classList.add('active');
-}
-
-precedent.addEventListener('click', slidePrecedente);
-
-// Message d'erreur Inscription
+   
 
 
-// const pwdInput = document.querySelector("#passwordIns");
-// const confirmPwdInput = document.querySelector("#confirmPasswordIns");
-// const formIns = document.querySelector("#formIns");
 
-// document.querySelector("#formIns").addEventListener("submit", e => {
-//     if (pwdInput.value !== confirmPwdInput.value) {
-//         e.preventDefault();
-//         console.log(pwdInput.value);
-//         alert("Le mot de passe et sa confirmation doivent être identiques !");
-//     }
-// });
+
