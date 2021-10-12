@@ -38,7 +38,11 @@ const iconI = document.querySelector('#iconI');
 const iconX = document.querySelector('#iconX');
 const html = document.querySelector('html');
 
+
 iconI.addEventListener('click', () => { 
+
+    nav.style.marginTop = ("0");
+
     if (menu.classList.contains("responsive")) {
         menu.classList.remove("responsive");
         nav.style.width = ("50px");
@@ -46,7 +50,6 @@ iconI.addEventListener('click', () => {
     } else {
         menu.classList.add("responsive");
         nav.style.width = ("100%");
-        nav.style.marginTop = ("0");
         rectNav.style.width = ("100%");
         iconX.style.display = ("block");
         iconX.style.fontSize = ("50px");
@@ -55,7 +58,8 @@ iconI.addEventListener('click', () => {
         }
 })
 
-iconX.addEventListener('click', () => { 
+iconX.addEventListener('click', () => {  
+        nav.style.marginTop = ("30px");
         menu.classList.remove("responsive");
         nav.style.width = ("50px");
         rectNav.style.width = ("50px");
